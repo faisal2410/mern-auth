@@ -29,45 +29,45 @@ function Register() {
   };
 
   return (
-    <div className="grid grid-cols-2 h-screen justify-center items-center p-5">
+    <div className="grid items-center justify-center h-screen grid-cols-2 p-5">
       <div className="flex justify-end pr-32">
         <div className="flex flex-col space-y-5 w-[500]  p-5">
           <div>
-            <h1 className=" text-3xl font-bold text-gray-600">
-              HEY , WELCOME TO SHEY
+            <h1 className="text-3xl font-bold text-gray-600 ">
+              HEY , WELCOME TO Lead Soft
             </h1>
             <p className="mt-2 text-gray-500">Register to continue , Will see u inside</p>
           </div>
           <hr />
           <input
             type="text"
-            className=" border-gray-400 border-2 focus:outline-none py-1 px-3 border-r-0 border-t-0 text-gray-500"
+            className="px-3 py-1 text-gray-500 border-2 border-t-0 border-r-0 border-gray-400 focus:outline-none"
             placeholder="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="text"
-            className="border-gray-400 border-2 focus:outline-none py-1 px-3 border-r-0 border-t-0 text-gray-500"
+            className="px-3 py-1 text-gray-500 border-2 border-t-0 border-r-0 border-gray-400 focus:outline-none"
             placeholder="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="password"
-            className="border-gray-400 border-2 focus:outline-none py-1 px-3 border-r-0 border-t-0 text-gray-500"
+            className="px-3 py-1 text-gray-500 border-2 border-t-0 border-r-0 border-gray-400 focus:outline-none"
             placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div className="flex justify-between items-end">
+          <div className="flex items-end justify-between">
             <div className="flex flex-col space-y-5">
-              <Link className="underline text-gray-500" to="/login">
+              <Link className="text-gray-500 underline" to="/login">
                 Click Here To Login
               </Link>
             </div>
             <button
-              className="bg-green-800 px-5 py-1 text-white text-md"
+              className="px-5 py-1 text-white bg-green-800 text-md"
               onClick={registerHandler}
             >
               REGISTER
